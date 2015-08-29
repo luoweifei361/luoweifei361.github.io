@@ -1,0 +1,10 @@
+---
+layout: news
+title: "jekyll"
+permalink: /all/jekyll/
+author: all
+---
+
+{% for post in site.categories.jekyll %}
+  {% include news_item.html %}
+{% endfor %}

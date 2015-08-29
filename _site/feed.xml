@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+  >
+  <channel>
+    <title xml:lang="en">Jekyll • Simple, blog-aware, static sites</title>
+    <atom:link type="application/atom+xml" href="http://jekyllrb.com/feed.xml" rel="self"/>
+    <link>http://jekyllrb.com/</link>
+    <pubDate>Sat, 29 Aug 2015 12:48:46 +0800</pubDate>
+    <lastBuildDate>Sat, 29 Aug 2015 12:48:46 +0800</lastBuildDate>
+    <language>en-US</language>
+    <generator>Jekyll v2.5.3</generator>
+    <description>Transform your plain text into static websites and blogs.</description>
+    <image>
+      <description>Transform your plain text into static websites and blogs.</description>
+      <url>http://jekyllrb.com/img/logo-rss.png</url>
+      <title>Jekyll • Simple, blog-aware, static sites</title>
+      <link>http://jekyllrb.com/</link>
+      <width>144</width>
+      <height>73</height>
+    </image>
+    
+    <item>
+      <title>Jekyll搭建blog-文章分类</title>
+      <link>http://jekyllrb.com/blog/2015/08/28/Jekyll-feng-lei-weng-zhang/</link>
+      <pubDate>Fri, 28 Aug 2015 21:56:52 +0800</pubDate>
+      <dc:creator>fei361</dc:creator>
+      
+      
+      <category>jekyll</category>
+      
+      <category>blog</category>
+      
+      <guid isPermaLink="true">http://jekyllrb.com/blog/2015/08/28/Jekyll-feng-lei-weng-zhang/</guid>
+      <description>&lt;p&gt;1.首先在文章头部设定文章的分类。下面设定分类为categories: [blog]&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;l-Scalar-Plain&quot;&gt;layout&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;news_item&lt;/span&gt;
+&lt;span class=&quot;l-Scalar-Plain&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;Jekyll&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;blog&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;文章分类&amp;quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;	&lt;/span&gt;
+&lt;span class=&quot;l-Scalar-Plain&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;quot;2015-08-28&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;15:56:52&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s&quot;&gt;+0200&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;l-Scalar-Plain&quot;&gt;categories&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;blog&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;nn&quot;&gt;---&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;2.对分类后的文章进行输出。&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
+
+	{% for post in site.categories.versions limit:5 %}
+	       &lt;span class=&quot;nt&quot;&gt;&amp;lt;a&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;{{ post.url }}&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Version {{ post.version }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/a&amp;gt;&lt;/span&gt;
+	{% endfor %}
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Jekyll搭建blog-标签示例</title>
+      <link>http://jekyllrb.com/blog/2015/08/27/jekyll-biao-qian/</link>
+      <pubDate>Thu, 27 Aug 2015 00:00:00 +0800</pubDate>
+      <dc:creator>nil</dc:creator>
+      
+      
+      <category>jekyll</category>
+      
+      <category>blog</category>
+      
+      <guid isPermaLink="true">http://jekyllrb.com/blog/2015/08/27/jekyll-biao-qian/</guid>
+      <description>&lt;p&gt;使用md的code标签
+&lt;code&gt;
+  var java = &quot;hello world&quot;
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;One change deserves special note. In [#2633][]&lt;/p&gt;
+
+&lt;p&gt;bash代码高亮&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem install jekyll&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;高亮ruby代码&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sanitized_path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;/tmp/foobar/jail&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;..c:/..c:/..c:/etc/passwd&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;/tmp/foobar/jail/..c:/..c:/..c:/etc/passwd&amp;quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;代码高亮&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+String str =&quot;hello&quot;;
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;文本高亮&lt;code&gt;文本高亮&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;url超链接&lt;a href=&quot;http://www.baidu.com&quot;&gt;@baidu.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;区块引用&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p&gt;
+
+  &lt;p&gt;Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;p&gt;无序列表 所有使用特殊符号之前必需要有空行&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Red&lt;/li&gt;
+  &lt;li&gt;Green&lt;/li&gt;
+  &lt;li&gt;Blue&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;有序列表&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Bird&lt;/li&gt;
+  &lt;li&gt;Red&lt;/li&gt;
+  &lt;li&gt;High&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+viverra nec, fringilla in, laoreet vitae, risus.&lt;/li&gt;
+  &lt;li&gt;Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+Suspendisse id sem consectetuer libero luctus adipiscing.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;如果要在列表项目内放进引用，那 &amp;gt; 就需要缩进&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;A list item with a blockquote:&lt;/p&gt;
+
+    &lt;blockquote&gt;
+      &lt;p&gt;This is a blockquote
+inside a list item.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;分隔线&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;note unreleased&quot;&gt;
+  &lt;h5&gt;注意标题&lt;/h5&gt;
+  &lt;p&gt;
+    相关的内容。
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;图片
+&lt;img src=&quot;/img/jekyll-sticker.jpg&quot; alt=&quot;Jekyll Sticker&quot; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>jeklly搭建blog-代码高亮</title>
+      <link>http://jekyllrb.com/blog/2015/02/27/dai-mao-gao-liang/</link>
+      <pubDate>Fri, 27 Feb 2015 13:06:51 +0800</pubDate>
+      <dc:creator>fei361</dc:creator>
+      
+      
+      <category>jekyll</category>
+      
+      <category>blog</category>
+      
+      <guid isPermaLink="true">http://jekyllrb.com/blog/2015/02/27/dai-mao-gao-liang/</guid>
+      <description>&lt;p&gt;Supported languages&lt;/p&gt;
+
+&lt;p&gt;Pygments supports an ever-growing range of languages. Watch this space…
+Programming languages&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ActionScript
+Ada
+ANTLR
+AppleScript
+Assembly (various)
+Asymptote
+Awk
+Befunge
+Boo
+BrainFuck
+C, C++
+C#
+Clojure
+CoffeeScript
+ColdFusion
+Common Lisp
+Coq
+Cryptol (incl. Literate Cryptol)
+Cython
+D
+Dart
+Delphi
+Dylan
+Erlang
+Factor
+Fancy
+Fortran
+F#
+GAP
+Gherkin (Cucumber)
+GL shaders
+Groovy
+Haskell (incl. Literate Haskell)
+IDL
+Io
+Java
+JavaScript
+Lasso
+LLVM
+Logtalk
+Lua
+Matlab
+MiniD
+Modelica
+Modula-2
+MuPad
+Nemerle
+Nimrod
+Objective-C
+Objective-J
+Octave
+OCaml
+PHP
+Perl
+PovRay
+PostScript
+PowerShell
+Prolog
+Python 2.x and 3.x (incl. console sessions and tracebacks)
+REBOL
+Red
+Redcode
+Ruby (incl. irb sessions)
+Rust
+S, S-Plus, R
+Scala
+Scheme
+Scilab
+Smalltalk
+SNOBOL
+Tcl
+Vala
+Verilog
+VHDL
+Visual Basic.NET
+Visual FoxPro
+XQuery
+Zephir &amp;lt;/ul&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Template languages&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Cheetah templates
+Django / Jinja templates
+ERB (Ruby templating)
+Genshi (the Trac template language)
+JSP (Java Server Pages)
+Myghty (the HTML::Mason based framework)
+Mako (the Myghty successor)
+Smarty templates (PHP templating)
+Tea
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Other markup&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Apache config files
+Bash shell scripts
+BBCode
+CMake
+CSS
+Debian control files
+Diff files
+DTD
+Gettext catalogs
+Gnuplot script
+Groff markup
+HTML
+HTTP sessions
+INI-style config files
+IRC logs (irssi style)
+Lighttpd config files
+Makefiles
+MoinMoin/Trac Wiki markup
+MySQL
+Nginx config files
+POV-Ray scenes
+Ragel
+Redcode
+ReST
+Robot Framework
+RPM spec files
+SQL, also MySQL, SQLite
+Squid configuration
+TeX
+tcsh
+Vim Script
+Windows batch files
+XML
+XSLT
+YAML
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;… that’s all?&lt;/p&gt;
+
+&lt;p&gt;Well, why not write your own? Contributing to Pygments is easy and fun. Look here for the docs on lexer development and here for contact details.&lt;/p&gt;
+
+&lt;p&gt;Note: the languages listed here are supported in the development version. The latest release may lack a few of them.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

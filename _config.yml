@@ -1,0 +1,15 @@
+markdown: kramdown
+highlighter: pygments
+permalink: /blog/:year/:month/:day/:title/
+excerpt_separator: ""
+
+gauges_id: 503c5af6613f5d0f19000027
+google_analytics_id: UA-50755011-1
+
+repository: https://github.com/luoweifei361
+help_url: http://jekyll.bootcss.com/
+
+
+collections:
+  docs:
+    output: true

@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>Releases</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="generator" content="Jekyll v2.5.3">
+  <link rel="alternate" type="application/rss+xml" title="Jekyll • Simple, blog-aware, static sites - Feed" href="/feed.xml">
+  <link rel="alternate" type="application/atom+xml" title="Recent commits to Jekyll’s master branch" href="https://github.com/luoweifei361/commits/master.atom">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic,900">
+  <link rel="stylesheet" href="/css/screen.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <!--[if lt IE 9]>
+  <script src="/js/html5shiv.min.js"></script>
+  <script src="/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+
+<body class="wrap">
+  <header role="banner">
+  <nav class="mobile-nav show-on-mobiles">
+    <ul>
+  <li class="">
+    <a href="/">主页</a>
+  </li>
+
+  <li class="current">
+    <a href="/all/">文章</a>
+  </li>
+  <li>
+    <a href="http://jekyll.bootcss.com/docs/assets/">jekyll中文指南</a>
+  </li>
+ <li>
+    <a href="http://jekyllrb.com/">jekyll英文指南</a>
+  </li>
+
+</ul>
+
+  </nav>
+  <div class="grid">
+    <div class="unit one-third center-on-mobiles">
+      <h1>
+        <a href="/">
+          <span class="sr-only">Jekyll</span>
+          <!-- <img src="/img/logo-2x.png" width="249" height="115" alt="Jekyll Logo"> -->
+          <h1>fei361</h1>
+        </a>
+      </h1>
+    </div>
+    <nav class="main-nav unit two-thirds hide-on-mobiles">
+      <ul>
+  <li class="">
+    <a href="/">主页</a>
+  </li>
+
+  <li class="current">
+    <a href="/all/">文章</a>
+  </li>
+  <li>
+    <a href="http://jekyll.bootcss.com/docs/assets/">jekyll中文指南</a>
+  </li>
+ <li>
+    <a href="http://jekyllrb.com/">jekyll英文指南</a>
+  </li>
+
+</ul>
+
+    </nav>
+  </div>
+</header>
+
+
+    <section class="news">
+    <div class="grid">
+
+      <div class="docs-nav-mobile unit whole show-on-mobiles">
+  <select onchange="if (this.value) window.location.href=this.value">
+    <option value="">Navigate the blog…</option>
+    <option value="/news/">Home</option>
+    <optgroup label="v1.x">
+      
+      <option value="/blog/2015/08/28/Jekyll-feng-lei-weng-zhang/">Jekyll搭建blog-文章分类</option>
+      
+      <option value="/blog/2015/08/27/jekyll-biao-qian/">Jekyll搭建blog-标签示例</option>
+      
+      <option value="/blog/2015/02/27/dai-mao-gao-liang/">jeklly搭建blog-代码高亮</option>
+      
+    </optgroup>
+  </select>
+</div>
+
+
+      <div class="unit four-fifths">
+        
+
+      </div>
+
+      <div class="unit one-fifth hide-on-mobiles">
+  <aside>
+    <ul>
+      <li class="">
+        <a href="/all/">所有文章</a>
+      </li>
+    </ul>
+    <h4>分类文章</h4>
+    <ul>  
+      <li class="">
+        <a href="/all/jekyll/">Jekyll</a>
+      </li>
+     <!--  <li>
+        <a href="/docs/history/">History »</a>
+      </li> -->
+    </ul>
+    <h4>其它文章</h4>
+    <ul>
+        
+        
+        <li class="">
+          <a href="/blog/2015/08/28/Jekyll-feng-lei-weng-zhang/">Jekyll搭建blog-文章分类</a>
+        </li>
+        
+        
+        
+        <li class="">
+          <a href="/blog/2015/08/27/jekyll-biao-qian/">Jekyll搭建blog-标签示例</a>
+        </li>
+        
+        
+        
+        <li class="">
+          <a href="/blog/2015/02/27/dai-mao-gao-liang/">jeklly搭建blog-代码高亮</a>
+        </li>
+        
+        
+    </ul>
+    <h4>可用链接</h4>
+    <ul>
+        <li><a href="https://docs.shopify.com/themes/liquid-documentation/basics" target="_blank"> Liquid </a></li>
+    </ul> 
+  </aside>
+</div>
+
+
+      <div class="clear"></div>
+
+    </div>
+  </section>
+
+
+  <footer role="contentinfo">
+  <div class="grid">
+    <div class="unit one-third center-on-mobiles">
+      <p>Copyright &copy;&nbsp;2015 luoweifei361</p>
+    </div>
+    <div class="unit two-thirds align-right center-on-mobiles">
+      <p>
+        Proudly hosted by
+        <a href="https://github.com">github</a>
+        and powered by 
+        <a href="https://github.com/jekyll/jekyll">Jekyll</a>
+      </p>
+      
+    </div>
+  </div>
+</footer>
+
+  <script>
+  var anchorForId = function (id) {
+    var anchor = document.createElement("a");
+    anchor.className = "header-link";
+    anchor.href      = "#" + id;
+    anchor.innerHTML = "<span class=\"sr-only\">Permalink</span><i class=\"fa fa-link\"></i>";
+    anchor.title = "Permalink";
+    return anchor;
+  };
+
+  var linkifyAnchors = function (level, containingElement) {
+    var headers = containingElement.getElementsByTagName("h" + level);
+    for (var h = 0; h < headers.length; h++) {
+      var header = headers[h];
+
+      if (typeof header.id !== "undefined" && header.id !== "") {
+        header.appendChild(anchorForId(header.id));
+      }
+    }
+  };
+
+  document.onreadystatechange = function () {
+    if (this.readyState === "complete") {
+      var contentBlock = document.getElementsByClassName("docs")[0] || document.getElementsByClassName("news")[0];
+      if (!contentBlock) {
+        return;
+      }
+      for (var level = 1; level <= 6; level++) {
+        linkifyAnchors(level, contentBlock);
+      }
+    }
+  };
+</script>
+
+
+
+</body>
+</html>

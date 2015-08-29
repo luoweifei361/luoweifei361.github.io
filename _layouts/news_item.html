@@ -1,0 +1,19 @@
+---
+layout: news
+---
+
+<article>
+  <h3>
+    {{ page.title }}
+    <a href="{{ page.url }}" class="permalink" title="Permalink">∞</a>
+</h3>
+  <span class="post-category">
+    <span class="label">
+      {{ page.categories | array_to_sentence_string }}
+    </span>
+  </span>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>

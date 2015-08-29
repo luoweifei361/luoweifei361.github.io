@@ -1,0 +1,32 @@
+<div class="unit one-fifth hide-on-mobiles">
+  <aside>
+    <ul>
+      <li class="{% if page.title == 'all' %}current{% endif %}">
+        <a href="/all/">所有文章</a>
+      </li>
+    </ul>
+    <h4>分类文章</h4>
+    <ul>  
+      <li class="{% if page.title == 'jekyll' %}current{% endif %}">
+        <a href="/all/jekyll/">Jekyll</a>
+      </li>
+     <!--  <li>
+        <a href="/docs/history/">History »</a>
+      </li> -->
+    </ul>
+    <h4>其它文章</h4>
+    <ul>
+        {% for post in site.posts %}
+        {% unless post.categories contains 'release' %}
+        <li class="{% if page.title == post.title %}current{% endif %}">
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endunless %}
+        {% endfor %}
+    </ul>
+    <h4>可用链接</h4>
+    <ul>
+        <li><a href="https://docs.shopify.com/themes/liquid-documentation/basics" target="_blank"> Liquid </a></li>
+    </ul> 
+  </aside>
+</div>
